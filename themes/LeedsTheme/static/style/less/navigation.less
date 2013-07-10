@@ -1,0 +1,234 @@
+/* navigation.less */
+
+// main navigation settings
+// --------------------------------------------------
+
+// The main menu
+// --------------------------------------------------
+.nav-main {
+    margin:0;
+    padding:0;
+    height:2.45em;
+    float:left;
+    position:relative;
+
+    li {
+        display:inline;
+        margin:0;
+        margin-left:-.35em;
+
+        &:first-child {
+            border-left:0;
+            margin-left:0;
+        }
+
+        &:last-child {
+            border-right:0;
+        }
+
+        a {
+            display:inline-block;
+            margin:0;
+            margin-top:.8em;
+            padding:0 .7em .2em;
+        }
+        a:hover,
+        &.active a,
+        &.current-menu-item a,
+        &.current-menu-item a:visited,
+        &.current-menu-item a:active,
+        &.current-page-ancestor a,
+        &.current-post-ancestor a,
+        &.current-menu-parent a {
+            text-decoration:none;
+            border:0;
+            .border-radius(2px, 0, 0, 2px);
+            .transition(all, .15s);
+        }
+
+        &.menu-icon {
+			border:0 !IMPORTANT;
+			float:right;
+
+			a {
+				padding:0;
+				display:block;
+				width:24px;
+				height:24px;
+				margin:3px;
+				outline:none !IMPORTANT;
+
+				&:hover {
+					background:transparent;
+				}
+			}
+        }
+    }
+}
+
+// The breadcrumbs
+// --------------------------------------------------
+.breadcrumbs {
+    float:left;
+    margin:0;
+    margin-bottom:2px;
+    margin-top:15px;
+    padding:0;
+    li {
+        display:inline;
+        a {
+            text-decoration:none;
+            &:hover {
+                .transition(all, .5s);
+                text-decoration:underline;
+            }
+        }
+    }
+}
+
+// Section sidebar - left hand sidebar
+// --------------------------------------------------
+.section-sidebar {
+
+    .left-menu {
+        ul {
+            margin:1em 0;
+            padding:0;
+
+            ul {
+                padding:0;
+                margin:.2em 0 .2em 8px;
+                display:none;
+            }
+        }
+
+        li {
+            padding:.2em 0;
+            margin:0;
+            list-style:none;
+            list-style-image:none;
+
+            a {
+                position:relative;
+                text-decoration:none;
+                display:block;
+            	#nav-arrow > .left(right);
+
+                &:hover {
+                    .transition();
+                }
+            }
+            &.current-item > a, &.current-ancestor > a {
+                #nav-arrow > .left(right);
+            }
+
+			&.current-item > ul, &.current-ancestor > ul {
+            	display:block;
+        	}
+
+        }
+
+    }
+
+}
+
+// Site Sidebar
+// --------------------------------------------------
+.site-sidebar {
+    ul.ep_tm_key_tools {
+        list-style-type:none;
+        margin:1em 0;
+        padding:0;
+
+        li {
+            border:none;
+            display:block;
+            a {
+                display:block;
+                position:relative;
+                margin:4px 0;
+                padding-bottom:4px;
+                border-bottom:1px solid #ccc;
+                text-decoration:none;
+                #nav-arrow > .left(right);
+
+                &:hover {
+                    .transition();
+                }
+            }
+            &:first-child {
+                a {
+                    display:inline;
+                    margin:0;
+                    padding:0;
+                    &:before {
+                        border:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// footer navigation
+// --------------------------------------------------
+.content-info {
+
+    .nav {
+        display:inline;
+    	padding : 0;
+
+	    li {
+	        display:inline;
+	        a {
+	            padding:0 10px 0 7px;
+
+	            &:hover {
+	                text-decoration:underline;
+	            }
+	        }
+
+	        &:first-child a {
+	            padding-left:0;
+	        }
+
+	        &:last-child a {
+	            border-right:0;
+	        }
+	    }
+	}
+
+    ul.meta {
+        display:inline;
+    	li {
+	        display:inline;
+	    	list-style:none;
+	        float:right;
+	        a {
+		        border-right:0;
+		    }
+	    }
+    }
+}
+
+/*links between pages in multi-page posts */
+.page-links p
+{
+	font-weight:700;
+	text-align:right;
+}
+
+.page-links a
+{
+	font-weight:400;
+	padding:2px 5px;
+	margin:2px;
+	border:1px solid #ccc;
+	.rounded(); 
+}
+
+.page-links a:hover
+{
+	border-color:#CD592A;
+	text-decoration:none;
+}

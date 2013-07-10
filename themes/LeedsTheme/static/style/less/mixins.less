@@ -1,0 +1,514 @@
+// Mixins.less
+// Snippets of reusable CSS to develop faster and keep code readable
+// --------------------------------------------------
+
+// FONTS
+// --------------------------------------------------
+
+#font {
+  #family {
+    .serif() {
+      font-family: @serifFontFamily;
+    }
+    .sans-serif() {
+      font-family: @sansFontFamily;
+    }
+    .monospace() {
+      font-family: @monoFontFamily;
+    }
+  }
+  .shorthand(@size: @baseFontSize, @weight: normal, @lineHeight: @baseLineHeight) {
+    font-size: @size;
+    font-weight: @weight;
+    line-height: @lineHeight;
+  }
+  .serif(@size: @baseFontSize, @weight: normal, @lineHeight: @baseLineHeight) {
+    #font > #family > .serif;
+    #font > .shorthand(@size, @weight, @lineHeight);
+  }
+  .sans-serif(@size: @baseFontSize, @weight: normal, @lineHeight: @baseLineHeight) {
+    #font > #family > .sans-serif;
+    #font > .shorthand(@size, @weight, @lineHeight);
+  }
+  .monospace(@size: @baseFontSize, @weight: normal, @lineHeight: @baseLineHeight) {
+    #font > #family > .monospace;
+    #font > .shorthand(@size, @weight, @lineHeight);
+  }
+}
+
+// Placeholder text
+// --------------------------------------------------
+.placeholder(@color: @placeholderText) {
+  &:-moz-placeholder {
+    color: @color;
+  }
+  &:-ms-input-placeholder {
+    color: @color;
+  }
+  &::-webkit-input-placeholder {
+    color: @color;
+  }
+}
+
+// Webkit-style focus
+// --------------------------------------------------
+.tab-focus() {
+  // Default
+  outline: thin dotted #333;
+  // Webkit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+// --------------------------------------------------
+// CSS3 PROPERTIES
+// --------------------------------------------------
+
+// Drop shadows
+// --------------------------------------------------
+.drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
+  -webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+}
+.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @color: @white) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur @color;
+  -moz-box-shadow: inset @horizontal @vertical @blur @color;
+  box-shadow: inset @horizontal @vertical @blur @color;
+}
+
+// Rounded corners
+// --------------------------------------------------
+.rounded(@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+  -webkit-border-top-right-radius: @topright;
+  -webkit-border-bottom-right-radius: @bottomright;
+  -webkit-border-bottom-left-radius: @bottomleft;
+  -webkit-border-top-left-radius: @topleft;
+  -moz-border-radius-topright: @topright;
+  -moz-border-radius-bottomright: @bottomright;
+  -moz-border-radius-bottomleft: @bottomleft;
+  -moz-border-radius-topleft: @topleft;
+  border-top-right-radius: @topright;
+  border-bottom-right-radius: @bottomright;
+  border-bottom-left-radius: @bottomleft;
+  border-top-left-radius: @topleft;
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+
+// Opacity
+// --------------------------------------------------
+.opacity(@opacity: 0.5) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+}
+
+// Transitions
+// --------------------------------------------------
+.transition( @what : all, @length : 0.25s, @easing : ease-in-out )
+{
+    @val: @what @length @easing;
+
+    -webkit-transition: @val;
+    -moz-transition: @val;
+    -o-transition: @val;
+    transition: @val;
+}
+
+// Transformations
+// --------------------------------------------------
+.rotate(@degrees) {
+  -webkit-transform: rotate(@degrees);
+     -moz-transform: rotate(@degrees);
+      -ms-transform: rotate(@degrees);
+       -o-transform: rotate(@degrees);
+          transform: rotate(@degrees);
+}
+.scale(@ratio) {
+  -webkit-transform: scale(@ratio);
+     -moz-transform: scale(@ratio);
+      -ms-transform: scale(@ratio);
+       -o-transform: scale(@ratio);
+          transform: scale(@ratio);
+}
+.translate(@x, @y) {
+  -webkit-transform: translate(@x, @y);
+     -moz-transform: translate(@x, @y);
+      -ms-transform: translate(@x, @y);
+       -o-transform: translate(@x, @y);
+          transform: translate(@x, @y);
+}
+.skew(@x, @y) {
+  -webkit-transform: skew(@x, @y);
+     -moz-transform: skew(@x, @y);
+      -ms-transform: skew(@x, @y);
+       -o-transform: skew(@x, @y);
+          transform: skew(@x, @y);
+}
+.translate3d(@x, @y, @z) {
+  -webkit-transform: translate(@x, @y, @z);
+     -moz-transform: translate(@x, @y, @z);
+      -ms-transform: translate(@x, @y, @z);
+       -o-transform: translate(@x, @y, @z);
+          transform: translate(@x, @y, @z);
+}
+
+// Backface visibility
+// Prevent browsers from flickering when using CSS 3D transforms.
+// Default value is `visible`, but can be changed to `hidden
+// See git pull https://github.com/dannykeane/bootstrap.git backface-visibility for examples
+// --------------------------------------------------
+.backface-visibility(@visibility){
+    -webkit-backface-visibility: @visibility;
+       -moz-backface-visibility: @visibility;
+        -ms-backface-visibility: @visibility;
+            backface-visibility: @visibility;
+}
+
+// Background clipping
+// Heads up: FF 3.6 and under need "padding" instead of "padding-box"
+// --------------------------------------------------
+.background-clip(@clip) {
+  -webkit-background-clip: @clip;
+     -moz-background-clip: @clip;
+          background-clip: @clip;
+}
+
+// Background sizing
+// --------------------------------------------------
+.background-size(@size){
+  -webkit-background-size: @size;
+     -moz-background-size: @size;
+       -o-background-size: @size;
+          background-size: @size;
+}
+
+// Box sizing
+// --------------------------------------------------
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+     -moz-box-sizing: @boxmodel;
+      -ms-box-sizing: @boxmodel;
+          box-sizing: @boxmodel;
+}
+
+// User select
+// For selecting text on the page
+// --------------------------------------------------
+.user-select(@select) {
+  -webkit-user-select: @select;
+     -moz-user-select: @select;
+      -ms-user-select: @select;
+       -o-user-select: @select;
+          user-select: @select;
+}
+
+// Resize anything
+// --------------------------------------------------
+.resizable(@direction) {
+  resize: @direction; // Options: horizontal, vertical, both
+  overflow: auto; // Safari fix
+}
+
+// CSS3 Content Columns
+// --------------------------------------------------
+.content-columns(@columnCount, @columnGap: @gridGutterWidth) {
+  -webkit-column-count: @columnCount;
+     -moz-column-count: @columnCount;
+          column-count: @columnCount;
+  -webkit-column-gap: @columnGap;
+     -moz-column-gap: @columnGap;
+          column-gap: @columnGap;
+}
+
+// Optional hyphenation
+// --------------------------------------------------
+.hyphens(@mode: auto) {
+  word-wrap: break-word;
+  -webkit-hyphens: @mode;
+     -moz-hyphens: @mode;
+      -ms-hyphens: @mode;
+       -o-hyphens: @mode;
+          hyphens: @mode;
+}
+
+// Opacity
+// --------------------------------------------------
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
+
+// --------------------------------------------------
+// BACKGROUNDS
+// --------------------------------------------------
+
+// Add an alphatransparency value to any background
+// or border color (via Elyse Holladay)
+// --------------------------------------------------
+#translucent {
+  .background(@color: @white, @alpha: 1) {
+    background-color: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+  }
+  .border(@color: @white, @alpha: 1) {
+    border-color: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+    .background-clip(padding-box);
+  }
+}
+
+// Gradient Bar Colors for buttons and alerts
+// --------------------------------------------------
+.gradientBar(@primaryColor, @secondaryColor) {
+  #gradient > .vertical(@primaryColor, @secondaryColor);
+  border-color: @secondaryColor @secondaryColor darken(@secondaryColor, 15%);
+  border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) fadein(rgba(0,0,0,.1), 15%);
+}
+
+// Gradients
+// --------------------------------------------------
+#gradient {
+  .horizontal(@startColor: #555, @endColor: #333) {
+    background-color: @endColor;
+    background-image: -moz-linear-gradient(left, @startColor, @endColor); // FF 3.6+
+    background-image: -ms-linear-gradient(left, @startColor, @endColor); // IE10
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+    background-image: -webkit-linear-gradient(left, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+    background-image: -o-linear-gradient(left, @startColor, @endColor); // Opera 11.10
+    background-image: linear-gradient(left, @startColor, @endColor); // Le standard
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@startColor,@endColor)); // IE9 and down
+  }
+  .vertical(@startColor: #555, @endColor: #333) {
+    background-color: mix(@startColor, @endColor, 60%);
+    background-image: -moz-linear-gradient(top, @startColor, @endColor); // FF 3.6+
+    background-image: -ms-linear-gradient(top, @startColor, @endColor); // IE10
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+    background-image: -webkit-linear-gradient(top, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+    background-image: -o-linear-gradient(top, @startColor, @endColor); // Opera 11.10
+    background-image: linear-gradient(top, @startColor, @endColor); // The standard
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down
+  }
+  .directional(@startColor: #555, @endColor: #333, @deg: 45deg) {
+    background-color: @endColor;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(@deg, @startColor, @endColor); // FF 3.6+
+    background-image: -ms-linear-gradient(@deg, @startColor, @endColor); // IE10
+    background-image: -webkit-linear-gradient(@deg, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+    background-image: -o-linear-gradient(@deg, @startColor, @endColor); // Opera 11.10
+    background-image: linear-gradient(@deg, @startColor, @endColor); // The standard
+  }
+  .vertical-three-colors(@startColor: #00b3ee, @midColor: #7a43b6, @colorStop: 50%, @endColor: #c3325f) {
+    background-color: mix(@midColor, @endColor, 80%);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), color-stop(@colorStop, @midColor), to(@endColor));
+    background-image: -webkit-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+    background-image: -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
+    background-image: -ms-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+    background-image: -o-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+    background-image: linear-gradient(@startColor, @midColor @colorStop, @endColor);
+    background-repeat: no-repeat;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down, gets no color-stop at all for proper fallback
+  }
+  .radial(@innerColor: #555, @outerColor: #333)  {
+    background-color: @outerColor;
+    background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(@innerColor), to(@outerColor));
+    background-image: -webkit-radial-gradient(circle, @innerColor, @outerColor);
+    background-image: -moz-radial-gradient(circle, @innerColor, @outerColor);
+    background-image: -ms-radial-gradient(circle, @innerColor, @outerColor);
+    background-image: -o-radial-gradient(circle, @innerColor, @outerColor);
+    background-repeat: no-repeat;
+  }
+  .striped(@color, @angle: -45deg) {
+    background-color: @color;
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+    background-image: -ms-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  }
+}
+
+// Reset filters for IE
+// --------------------------------------------------
+.reset-filter() {
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
+}
+
+// CSS image replacement
+// Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
+// --------------------------------------------------
+.hide-text() {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+// pop over arrows
+// -------------------------
+#popoverArrow {
+  .top(@arrowWidth: 5px, @color: @black) {
+    bottom: 0;
+    left: 50%;
+    margin-left: -@arrowWidth;
+    border-left: @arrowWidth solid transparent;
+    border-right: @arrowWidth solid transparent;
+    border-top: @arrowWidth solid @color;
+  }
+  .left(@arrowWidth: 5px, @color: @black) {
+    top: 50%;
+    right: 0;
+    margin-top: -@arrowWidth;
+    border-top: @arrowWidth solid transparent;
+    border-bottom: @arrowWidth solid transparent;
+    border-left: @arrowWidth solid @color;
+  }
+  .bottom(@arrowWidth: 5px, @color: @black) {
+    top: 0;
+    left: 50%;
+    margin-left: -@arrowWidth;
+    border-left: @arrowWidth solid transparent;
+    border-right: @arrowWidth solid transparent;
+    border-bottom: @arrowWidth solid @color;
+  }
+  .right(@arrowWidth: 5px, @color: @black) {
+    top: 50%;
+    left: 0;
+    margin-top: -@arrowWidth;
+    border-top: @arrowWidth solid transparent;
+    border-bottom: @arrowWidth solid transparent;
+    border-right: @arrowWidth solid @color;
+  }
+}
+
+// navigation arrows
+// used in left and right hand menus
+// --------------------------------------------------
+#nav-arrow {
+
+  .arrow-colour(down, @colour)    { border-color: @colour transparent transparent transparent; }
+  .arrow-colour(left, @colour)    { border-color: transparent @colour transparent transparent; }
+  .arrow-colour(up, @colour)      { border-color: transparent transparent @colour transparent; }
+  .arrow-colour(right, @colour)   { border-color: transparent transparent transparent @colour; }
+  .arrow-margin-left(down, @width, @height, @offset)      { margin: @offset 0 0 0; }
+  .arrow-margin-left(left, @width, @height, @offset)      { margin: (@offset - (@height / 4)) 0 0 -(@width / 2); }
+  .arrow-margin-left(up, @width, @height, @offset)        { margin: (@offset - (@height / 2)) 0 0 0; }
+  .arrow-margin-left(right, @width, @height, @offset)     { margin: (@offset - (@height / 4)) 0 0 (@width / 2); }
+  .arrow-margin-right(down, @width, @height, @offset)      { margin: @offset 0 0 0; }
+  .arrow-margin-right(left, @width, @height, @offset)      { margin: (@offset - (@height / 4)) 0 0 0; }
+  .arrow-margin-right(up, @width, @height, @offset)        { margin: (@offset - (@height / 2)) 0 0 0; }
+  .arrow-margin-right(right, @width, @height, @offset)     { margin: (@offset - (@height / 4)) -(@width / 2) 0 (@width / 2); }
+
+  .left(@pointing: right, @width: 8px, @height: 10px, @indent: 18px, @offset: 0px, @colour: red, @hoverColour: black) {
+    padding-left: @indent;
+    &:before {
+      content:'';
+      display:inline-block;
+      position:absolute;
+      top:0.5em;
+      left:0;     
+      border-style:solid;
+      border-width:(@height / 2) @width;
+      .arrow-margin-left(@pointing, @width, @height, @offset);
+      .arrow-colour(@pointing, @colour);
+    }
+    &:hover:before {
+      .arrow-colour(@pointing, @hoverColour);
+    }
+  }
+  .right(@pointing: right, @width: 8px, @height: 10px, @indent: 18px, @offset: 10px, @colour: red, @hoverColour: black) {
+    padding-right: @indent;
+    &:before {
+      content:'';
+      display:inline-block;
+      position:absolute;
+      top:0.5em;
+      right:0;     
+      border-style:solid;
+      border-width:(@height / 2) @width;
+      .arrow-margin-right(@pointing, @width, @height, @offset);
+      .arrow-colour(@pointing, @colour);
+    }
+    &:hover:before {
+      .arrow-colour(@pointing, @hoverColour);
+    }
+  }
+}
+
+
+// Mixin to give css arrows (with given properties) on elements.
+// based on http://cssarrowplease.com/)
+// You can give the arrow border, so this is what's different from the #popoverArrow
+// --------------------------------------------------
+#arrow {
+
+    #create(@size, @color, @border-width, @border-color, @position1, @value1, @position2, @value2) {
+        position: relative;
+        background: @color;
+        border: @border-width solid @border-color;      
+
+        &:after, &:before {
+            .arrow-position(@position1, @value1);
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        &:after {
+            .arrow-border-color(@position1, @color);
+            border-width: @size;
+            .arrow-position(@position2, @value2);
+            .arrow-margin(@position2, 0px - @size);
+        }
+
+        &:before {
+            .arrow-border-color(@position1, @border-color);
+            border-width: @size + round(1.41421356 * @border-width);
+            .arrow-position(@position2, @value2);
+            .arrow-margin(@position2, 0px - (@size + round(1.41421356 * @border-width)));
+        }
+    }
+
+    .arrow-position(bottom, @value)     { bottom: @value; }
+    .arrow-position(left, @value)       { left: @value; }
+    .arrow-position(top, @value)        { top: @value; }
+    .arrow-position(right, @value)      { right: @value; }
+    .arrow-border-color(bottom, @value) { border-bottom-color: @value; }
+    .arrow-border-color(left, @value)   { border-left-color: @value; }
+    .arrow-border-color(top, @value)    { border-top-color: @value; }
+    .arrow-border-color(right, @value)  { border-right-color: @value; }
+    .arrow-margin(bottom, @value)       { margin-bottom: @value; }
+    .arrow-margin(left, @value)         { margin-left: @value; }
+    .arrow-margin(top, @value)          { margin-top: @value; }
+    .arrow-margin(right, @value)        { margin-right: @value; }
+
+
+    .top(@size, @color, @border-width, @border-color) {
+        #arrow > #create(@size, @color, @border-width, @border-color, bottom, 100%, left, 50%);
+    }
+
+    .left(@size, @color, @border-width, @border-color) {
+        #arrow > #create(@size, @color, @border-width, @border-color, right, 100%, top, 50%);
+    }
+
+    .right(@size, @color, @border-width, @border-color) {
+        #arrow > #create(@size, @color, @border-width, @border-color, left, 100%, top, 50%);
+    }
+
+    .bottom(@size, @color, @border-width, @border-color) {
+        #arrow > #create(@size, @color, @border-width, @border-color, top, 100%, left, 50%);
+    }
+}

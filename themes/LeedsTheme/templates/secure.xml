@@ -1,0 +1,89 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE html SYSTEM "entities.dtd" > 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epc="http://eprints.org/ep3/control">
+  <head>
+    <title><epc:pin ref="title" textonly="yes"/> - <epc:phrase ref="archive_name"/></title>
+	<epc:pin ref="login_status_header"/>
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+	<script type="text/javascript" src="{$config{rel_path}}/javascript/auto.js"><!-- padder --></script>
+    <style type="text/css" media="screen">@import url(<epc:print expr="$config{rel_path}"/>/style/auto.css);</style>
+    <link rel="icon" href="http://www.leeds.ac.uk/site/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="http://www.leeds.ac.uk/site/favicon.ico" type="image/x-icon"/>
+    <link rel="Top" href="{$config{frontpage}}"/>
+    <link rel="Search" href="{$config{http_cgiurl}}/search"/>
+    <epc:pin ref="head"/>
+    <style type='text/css' media="screen">@import url(<epc:print expr="$config{rel_path}"/>/style/nojs.css);</style>
+    <script type="text/javascript" src="{$config{rel_path}}/javascript/jscss.js"><!-- padder --></script>
+  </head>
+<body>
+<div class="sidebars-site">
+    <div class="header"> 
+        <a id="logo" href="http://www.leeds.ac.uk/" title="University of Leeds Homepage"><img src="{$config{rel_path}}/style/img/logo/logo_black.png" class="hidden" alt="University of Leeds" /></a>
+    </div>
+
+    <div class="content">
+
+        <h1><a href="{$config{frontpage}}" rel="home"><span><epc:phrase ref="archive_name"/></span></a></h1>
+      
+        <ul id="menu-top-tabs" class="nav-main">
+			<li><a href="{$config{frontpage}}">Home</a></li>
+			<li><a href="{$config{rel_path}}/view/">Browse</a></li>
+			<li><a href="{$config{rel_path}}/information.html">About</a></li>
+			<li><a href="{$config{rel_path}}/help/">Help</a></li>
+		</ul>
+
+        <div class="site-sidebar">
+            <div class="site-sidebar-content">
+            	<div class="site-search">
+            		<h4>Search site</h4>
+            		<form role="search" method="get" action="{$config{rel_path}}/cgi/search/simple">
+            			<label class="screen-reader-text">Search for:</label>
+					    <input class="searchinput" type="text" name="q" placeholder="Search..." />
+					    <input value="go" type="submit" name="_action_search" class="searchsubmit" />
+						<input type="hidden" name="_order" value="bytitle" />
+						<input type="hidden" name="basic_srchtype" value="ALL" />
+						<input type="hidden" name="_satisfyall" value="ALL" />
+						<input type="hidden" name="_default_action" value="search" />
+					</form>
+					<br />
+					<a class="ep_advanced_search_link" href="{$config{rel_path}}/cgi/search/advanced">Advanced search</a>
+				</div>
+				<div class="right-menu">
+					<ul class="menu">
+						<li><a href="{$config{perl_url}}/tag_cloud">Tag Cloud</a></li>
+						<li><a href="{$config{perl_url}}/latest">Latest Additions</a></li>
+						<li><a href="{$config{base_url}}/help/">Help</a></li>
+					</ul>
+				</div>
+            </div>
+        </div>
+        
+        <div class="content-main">        
+        	<h2 class="ed_page_title"><epc:pin ref="title" /></h2>
+
+			<div class="ed_page_content">
+				<epc:pin ref="page"/>
+			</div>
+			<div class="clearer"> </div>
+        </div><!-- #.content-main -->
+
+    </div><!-- #.content -->
+
+    <div class="content-info">
+		<ul id="menu-footer-links" class="nav">
+			<li><a href="{$config{perl_url}}/accessibility/">Accessibility</a></li>
+			<li><a href="{$config{perl_url}}/terms-conditions/">Terms and Conditions</a></li>
+			<li><a href="{$config{perl_url}}/privacy/">Privacy</a></li>
+			<li><a href="http://www.leeds.ac.uk/freedom-of-information">Freedom of Information</a></li>
+			<li><a href="{$config{perl_url}}/contact/">Contact Us</a></li>
+		</ul>
+        <ul class="nav meta">
+			<li><epc:pin ref="login_status"/></li>
+        </ul>
+        <p><epc:phrase ref="archive_name"/> is powered by <a href="http://eprints.org">EPrints</a><br />&#169; Copyright Leeds 2013</p>
+    </div>
+</div>
+
+</body>
+</html>
