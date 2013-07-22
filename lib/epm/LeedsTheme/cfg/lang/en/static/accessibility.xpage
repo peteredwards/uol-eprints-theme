@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE page SYSTEM "entities.dtd" >
+<xpage:page xmlns="http://www.w3.org/1999/xhtml" xmlns:xpage="http://eprints.org/ep3/xpage" xmlns:epc="http://eprints.org/ep3/control">
+<xpage:title>Accessibility</xpage:title>
+<xpage:body>
+
+<p>The University of Leeds endeavours to promote equality and diversity in their policies, practice and services. We are committed to making all web pages accessible to as wide a range of visitors as possible.</p>
+<p>As part of this, we are committed to making our pages as compliant as possible with the <a href="http://www.w3.org/WAI/">Web Accessibility Initiative's guidelines</a>.</p>
+<p>If you experience any difficulty in accessing any of the pages on this site, or if you have any suggestions as to how we might improve accessibility, please email the <epc:phrase ref="archive_name" /> Site Administrator: <a href="mailto:{$config{adminemail}}"><epc:print expr="$config{adminemail}" /></a></p>
+
+</xpage:body>
+
+</xpage:page>
