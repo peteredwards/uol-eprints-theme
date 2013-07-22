@@ -13,6 +13,18 @@
     <link rel="Top" href="{$config{frontpage}}"/>
     <link rel="Search" href="{$config{http_cgiurl}}/search"/>
     <epc:pin ref="head"/>
+    <!--[if IE]>
+      <style type="text/css">body{font-size:75%}.clearfix,.content{zoom:1}</style>
+    <![endif]-->
+    <!--[if (gte IE 5.5)&(lt IE 9)]>
+      <style type="text/css">.content h1 a{zoom:1}</style>
+    <![endif]-->
+    <!--[if IE 6]>
+      <style type="text/css">body{background:none}.content-main h2{line-height:1.09em}.document .content-main h2{margin-top:0}.header h2{float: none}#logo{line-height:58px;z-index:10}.site-sidebar{height:780px;margin-bottom:18px;z-index:9;position:absolute;top:58px;right:9px;float:none;}.sidebars-site .nav-main{width:710px}.section-sidebar{width:130px;clear:both}.content-main{float:none}.header{float:left;overflow:auto;position:relative;width:100%}.content-info p{position:relative}.nav-main li{border:0}.nav-main li a{margin-left:-.1em;padding:0 0.5em 0.2em 0.5em}.nav-main li:first-child a{padding: 0 0.7em 0.2em 0.9em}</style>
+    <![endif]-->
+    <!--[if IE 7]>
+      <style type="text/css">.content-main h2{line-height:1.07em}.content-main li a:hover{text-decoration: underline}.header h2{float:none}.site-search input.searchsubmit{position:absolute;right:10px}#logo{z-index:10}.nav-main li{border:0}.nav-main li a{margin-left:-.1em;padding:0 0.5em 0.2em 0.5em}.nav-main li:first-child a{padding:0 0.7em 0.2em 0.9em}.nav-main li:last-of-type a{border:0}.breadcrumb li{float:left}</style>
+    <![endif]-->
     <style type='text/css' media="screen">@import url(<epc:print expr="$config{rel_path}"/>/style/nojs.css);</style>
     <script type="text/javascript" src="{$config{rel_path}}/javascript/jscss.js"><!-- padder --></script>
   </head>
