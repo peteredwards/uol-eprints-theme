@@ -79,11 +79,11 @@
 
     <div class="content-info">
 		<ul id="menu-footer-links" class="nav">
-			<li><a href="{$config{perl_url}}/accessibility/">Accessibility</a></li>
-			<li><a href="{$config{perl_url}}/terms-conditions/">Terms and Conditions</a></li>
-			<li><a href="{$config{perl_url}}/privacy/">Privacy</a></li>
+			<li><a href="{$config{rel_path}}/accessibility.html">Accessibility</a></li>
+			<li><a href="{$config{rel_path}}/terms-conditions.html">Terms and Conditions</a></li>
+			<li><a href="{$config{rel_path}}/privacy.html">Privacy</a></li>
 			<li><a href="http://www.leeds.ac.uk/freedom-of-information">Freedom of Information</a></li>
-			<li><a href="{$config{perl_url}}/contact/">Contact Us</a></li>
+			<li><a href="{$config{rel_path}}/contact.html">Contact Us</a></li>
 		</ul>
         <p><epc:phrase ref="archive_name"/> is powered by <a href="http://eprints.org">EPrints</a><br />&#169; Copyright Leeds 2013</p>
     </div>
