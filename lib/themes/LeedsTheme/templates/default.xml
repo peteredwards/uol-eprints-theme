@@ -61,6 +61,10 @@
 					<a class="ep_advanced_search_link" href="{$config{rel_path}}/cgi/search/advanced">Advanced search</a>
 				</div>
 				<div class="right-menu">
+					<span class="ep_search_feed"><a href="{$config{rel_cgipath}}/latest_tool?output=Atom"><img alt="[feed]" src="{$config{rel_path}}/style/images/feed-icon-14x14.png" border="0" /></a> <a href="{$config{rel_cgipath}}/latest_tool?output=Atom">Atom</a></span>
+					<span class="ep_search_feed"><a href="{$config{rel_cgipath}}/latest_tool?output=RSS2"><img alt="[feed]" src="{$config{rel_path}}/style/images/feed-icon-14x14.png" border="0" /></a> <a href="{$config{rel_cgipath}}/latest_tool?output=RSS2">RSS</a></span>
+				</div>
+				<div class="right-menu">
 					<epc:pin ref="login_status"/>
 				</div>
             </div>

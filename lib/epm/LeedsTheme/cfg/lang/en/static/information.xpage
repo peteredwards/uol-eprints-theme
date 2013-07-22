@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE page SYSTEM "entities.dtd" >
+<xpage:page xmlns="http://www.w3.org/1999/xhtml" xmlns:xpage="http://eprints.org/ep3/xpage" xmlns:epc="http://eprints.org/ep3/control">
+<xpage:title>About this repository</xpage:title>
+<xpage:body>
+
+<p>The RoaDMaP project ran from Jan 2012 - June 2013. It was partially funded by JISC with additional funding from the University of Leeds. This repository is being used as a test installation of <a href="http://www.eprints.org">eprints</p> for evaluation purposes.</p>
+<h3>Project links</h3>
+<ul>
+<li><a href="http://library.leeds.ac.uk/roadmap-project">Project website</a></li>
+<li><a href="https://teamspace.leeds.ac.uk/sites/libroadmap/">Project documentation</a></li>
+</ul>
+
+</xpage:body>
+
+</xpage:page>

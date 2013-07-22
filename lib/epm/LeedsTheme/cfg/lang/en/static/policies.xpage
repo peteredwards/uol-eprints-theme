@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE page SYSTEM "entities.dtd" >
+<xpage:page xmlns="http://www.w3.org/1999/xhtml" xmlns:xpage="http://eprints.org/ep3/xpage" xmlns:epc="http://eprints.org/ep3/control">
+<xpage:title>Research Data Management Policy</xpage:title>
+<xpage:body>
+
+<p>The management of Research Data reflects our:</p>
+<ul>
+	<li>commitment to research excellence</li>
+	<li>recognition of our duty to our funders</li>
+	<li>appreciation of the value of our data - to us and to others</li>
+</ul>
+
+<ol style="list-style-type: decimal;">
+<li>Research data will be managed to agreed standards throughout the research data lifecycle and according to funder requirements.</li>
+<li>Responsibility for research data management during any research project or programme lies with responsible owners such as Principal Investigators (PIs).</li>
+<li>The University is responsible for the provision of training, support and advice on research data management</li>
+<li>A data management plan that explicitly addresses the capture, management, integrity, confidentiality, preservation, sharing and publication of research data must be created for each proposed research project or funding application. Sufficient metadata shall also be created and stored to aid discovery and re-use.</li>
+<li>All research data should be offered and assessed for deposit and preservation in an appropriate University, national or international data service or domain repository, unless specified otherwise in the data management plan.</li>
+<li>Data should not be deposited with any organisation that does not commit to its access and availability for re-use, unless this is a condition of the project funding or arising from other requirements.</li>
+<li>At the completion of each research project, the PI should ensure that all relevant research data are made available, subject to meeting appropriate requirements, in the location specified in the data management plan.</li>
+<li>Research and Innovation Board will be responsible for reviewing and updating the policy.
+</ol>
+
+<p>The University recognises the following benefits of implementing this policy:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>support for the re-use of data</li>
+<li>benefit future generations</li>
+<li>improved data integrity, security and access management</li>
+<li>opportunities for further research collaboration</li>
+<li>improved research reproducibility and validation</li>
+<li>further development of research skills</li>
+<li>the ability to cite data as a publication</li>
+<li>improved institutional research reputation</li>
+<li>improved relationship with research funders</li>
+</ol>
+
+<p><a href="http://ris.leeds.ac.uk/ris/goodpractice">Good practice and ethics information from the University of Leeds Research and Innovation Service</a></p>
+
+</xpage:body>
+
+</xpage:page>
