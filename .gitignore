@@ -1,0 +1,14 @@
+AUTHORS
+CHANGELOG
+COPYING
+NEWS
+README
+SIGNATURES
+VERSION
+archives/
+bin/
+cgi/
+cron/
+dev/
+tests/
+var/
