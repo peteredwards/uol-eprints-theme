@@ -7,32 +7,32 @@
   <link rel="alternate" type="application/rdf+xml" title="Repository Summary RDF+XML" href="{$config{http_cgiurl}}/export/repository/RDFXML/devel.rdf"></link>
   <link rel="alternate" type="text/n3" title="Repository Summary RDF+N3" href="{$config{http_cgiurl}}/export/repository/RDFN3/devel.n3"></link>
 </xpage:head>
-<xpage:title>Welcome to <epc:phrase ref="archive_name" /></xpage:title>
+<xpage:title><epc:phrase ref="archive_name" /></xpage:title>
 <xpage:body>
 
 <div class="ep_toolbox" ><div class="ep_toolbox_content" >
-  <a href="{$config{perl_url}}/latest">Latest Additions</a><br /><br />
-  View items added to the repository in the past week.
+  <h3><a href="{$config{perl_url}}/latest">Latest Additions</a></h3>
+  <p>View items added to the repository in the past week.</p>
 </div></div>
 
 <div class="ep_toolbox"><div class="ep_toolbox_content" >
- <a href="{$config{perl_url}}/search/advanced">Search Repository</a><br /><br />
- Search the repository using a full range of fields. Use the search field at the top of the page for a quick search.
+  <h3><a href="{$config{perl_url}}/search/advanced">Search Repository</a></h3>
+  <p>Search the repository using a full range of fields. Use the search field at the top of the page for a quick search.</p>
 </div></div>
 
 <div class="ep_toolbox"><div class="ep_toolbox_content" >
- <a href="{$config{base_url}}/view/subjects/">Browse Repository</a><br /><br />
- Browse the items in the repository by subject.
+  <h3><a href="{$config{base_url}}/view/subjects/">Browse Repository</a></h3>
+  <p>Browse the items in the repository by subject.</p>
 </div></div>
 
 <div class="ep_toolbox"><div class="ep_toolbox_content" >
- <a href="{$config{base_url}}/information.html">About this Repository</a><br /><br />
- More information about this site.
+  <h3><a href="{$config{base_url}}/information.html">About this Repository</a></h3>
+  <p>More information about this site.</p>
 </div></div>
 
 <div class="ep_toolbox"><div class="ep_toolbox_content" >
- <a href="{$config{base_url}}/policies.html">Repository Policies</a><br /><br />
- Policy for use of material in this repository.
+  <h3><a href="{$config{base_url}}/policies.html">Repository Policies</a></h3>
+  <p>Policy for use of material in this repository.</p>
 </div></div>
 
 <p style="margin-top: 2em; font-size: 90%">

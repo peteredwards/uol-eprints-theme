@@ -4,9 +4,10 @@
 <xpage:title>Authorisation Required</xpage:title>
 <xpage:body>
 
-<p>In order to access some areas of the repository you require a username and password.</p>
-
-<p><a href="{$config{perl_url}}/set_password">Register / Reset my password</a></p>
+<div class="ep_toolbox"><div class="ep_toolbox_content" >
+  <p>In order to access some areas of the repository you require a username and password.</p>
+  <p><a href="{$config{perl_url}}/set_password">Register / Reset my password</a></p>
+</div>
 
 </xpage:body>
 </xpage:page>
