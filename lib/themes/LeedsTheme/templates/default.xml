@@ -84,7 +84,7 @@
     <div class="content-info">
 		<ul id="menu-footer-links" class="nav">
 			<li><a href="{$config{rel_path}}/accessibility.html">Accessibility</a></li>
-			<li><a href="{$config{rel_path}}/terms-conditions.html">Terms and Conditions</a></li>
+			<li><a href="{$config{rel_path}}/policies.html">Repository Policies</a></li>
 			<li><a href="{$config{rel_path}}/privacy.html">Privacy</a></li>
 			<li><a href="http://www.leeds.ac.uk/freedom-of-information">Freedom of Information</a></li>
 			<li><a href="{$config{rel_path}}/contact.html">Contact Us</a></li>
