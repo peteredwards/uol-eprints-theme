@@ -23,13 +23,11 @@
     <!--[if IE 7]>
       <style type="text/css">.content-main h2{line-height:1.07em}.content-main li a:hover{text-decoration: underline}.header h2{float:none}.site-search input.searchsubmit{position:absolute;right:10px}#logo{z-index:10}.nav-main li{border:0}.nav-main li a{margin-left:-.1em;padding:0 0.5em 0.2em 0.5em}.nav-main li:first-child a{padding:0 0.7em 0.2em 0.9em}.nav-main li:last-of-type a{border:0}.breadcrumb li{float:left}</style>
     <![endif]-->
-    <style type='text/css' media="screen">@import url(<epc:print expr="$config{rel_path}"/>/style/nojs.css);</style>
-    <script type="text/javascript" src="{$config{rel_path}}/javascript/jscss.js"><!-- padder --></script>
   </head>
 <body class="sidebars-site sidebar-corporate">
 	<epc:pin ref="pagetop"/>
     <div class="header"> 
-        <a id="logo" href="http://www.leeds.ac.uk/" title="University of Leeds Homepage"><img src="{$config{rel_path}}/style/img/logo/logo_black.png" class="hidden" alt="University of Leeds" /></a>
+        <a id="logo" href="http://www.leeds.ac.uk/" title="University of Leeds Homepage"><img src="{$config{rel_path}}/images/logo/logo_black.png" class="hidden" alt="University of Leeds" /></a>
     </div>
 
     <div class="content">
