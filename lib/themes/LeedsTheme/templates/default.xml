@@ -29,6 +29,7 @@
     <script type="text/javascript" src="{$config{rel_path}}/javascript/jscss.js"><!-- padder --></script>
   </head>
 <body class="sidebars-site sidebar-corporate">
+	<epc:pin ref="pagetop"/>
     <div class="header"> 
         <a id="logo" href="http://www.leeds.ac.uk/" title="University of Leeds Homepage"><img src="{$config{rel_path}}/style/img/logo/logo_black.png" class="hidden" alt="University of Leeds" /></a>
     </div>
