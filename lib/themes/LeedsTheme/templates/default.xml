@@ -5,6 +5,7 @@
   <head>
     <title><epc:pin ref="title" textonly="yes"/> - <epc:phrase ref="archive_name"/></title>
 	<epc:pin ref="login_status_header"/>
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
     <link rel="icon" href="http://www.leeds.ac.uk/site/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="http://www.leeds.ac.uk/site/favicon.ico" type="image/x-icon"/>
     <link rel="Top" href="{$config{frontpage}}"/>
