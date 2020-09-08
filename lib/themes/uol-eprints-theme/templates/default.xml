@@ -8,34 +8,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title><epc:pin ref="title" textonly="yes"/> - <epc:phrase ref="archive_name"/></title>
 		<epc:pin ref="login_status_header"/>
-		<link rel="icon" sizes="192x192" type="image/png" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/android-icon-192x192.png"/>
-		<link rel="icon" sizes="144x144" type="image/png" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/android-icon-144x144.png"/>
-		<link rel="icon" sizes="96x96" type="image/png" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/android-icon-96x96.png"/>
-		<link rel="icon" sizes="72x72" type="image/png" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/android-icon-72x72.png"/>
-		<link rel="icon" sizes="48x48" type="image/png" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/android-icon-48x48.png"/>
-		<link rel="icon" sizes="36x36" type="image/png" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/android-icon-36x36.png"/>
-		<link rel="icon" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/favicon.ico"/>
-		<link rel="icon" sizes="16x16" type="image/png" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/favicon-16x16.png"/>
-		<link rel="icon" sizes="32x32" type="image/png" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/favicon-32x32.png"/>
-		<link rel="icon" sizes="96x96" type="image/png" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/favicon-96x96.png"/>
-		<link rel="apple-touch-icon" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/apple-icon-precomposed.png"/>
-		<link rel="apple-touch-icon" sizes="180x180" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/apple-icon-180x180.png"/>
-		<link rel="apple-touch-icon" sizes="152x152" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/apple-icon-152x152.png"/>
-		<link rel="apple-touch-icon" sizes="144x144" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/apple-icon-144x144.png"/>
-		<link rel="apple-touch-icon" sizes="120x120" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/apple-icon-120x120.png"/>
-		<link rel="apple-touch-icon" sizes="114x114" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/apple-icon-114x114.png"/>
-		<link rel="apple-touch-icon" sizes="76x76" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/apple-icon-76x76.png"/>
-		<link rel="apple-touch-icon" sizes="72x72" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/apple-icon-72x72.png"/>
-		<link rel="apple-touch-icon" sizes="60x60" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/apple-icon-60x60.png"/>
-		<link rel="apple-touch-icon" sizes="57x57" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/apple-icon-57x57.png"/>
-		<link rel="manifest" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/manifest.json"/>
-		<link rel="icon" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/favicon.ico" type="image/x-icon"/>
+		<link rel="icon" sizes="192x192" type="image/png" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/android-icon-192x192.png"/>
+		<link rel="icon" sizes="144x144" type="image/png" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/android-icon-144x144.png"/>
+		<link rel="icon" sizes="96x96" type="image/png" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/android-icon-96x96.png"/>
+		<link rel="icon" sizes="72x72" type="image/png" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/android-icon-72x72.png"/>
+		<link rel="icon" sizes="48x48" type="image/png" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/android-icon-48x48.png"/>
+		<link rel="icon" sizes="36x36" type="image/png" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/android-icon-36x36.png"/>
+		<link rel="icon" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/favicon.ico"/>
+		<link rel="icon" sizes="16x16" type="image/png" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/favicon-16x16.png"/>
+		<link rel="icon" sizes="32x32" type="image/png" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/favicon-32x32.png"/>
+		<link rel="icon" sizes="96x96" type="image/png" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/favicon-96x96.png"/>
+		<link rel="apple-touch-icon" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/apple-icon-precomposed.png"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/apple-icon-180x180.png"/>
+		<link rel="apple-touch-icon" sizes="152x152" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/apple-icon-152x152.png"/>
+		<link rel="apple-touch-icon" sizes="144x144" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/apple-icon-144x144.png"/>
+		<link rel="apple-touch-icon" sizes="120x120" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/apple-icon-120x120.png"/>
+		<link rel="apple-touch-icon" sizes="114x114" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/apple-icon-114x114.png"/>
+		<link rel="apple-touch-icon" sizes="76x76" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/apple-icon-76x76.png"/>
+		<link rel="apple-touch-icon" sizes="72x72" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/apple-icon-72x72.png"/>
+		<link rel="apple-touch-icon" sizes="60x60" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/apple-icon-60x60.png"/>
+		<link rel="apple-touch-icon" sizes="57x57" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/apple-icon-57x57.png"/>
+		<link rel="manifest" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/manifest.json"/>
+		<link rel="icon" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/favicon.ico" type="image/x-icon"/>
 		<link rel="shortcut icon" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/favicon.ico" type="image/x-icon"/>
-		<meta name="msapplication-TileImage" content="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/favicons/ms-icon-144x144.png"/>
+		<meta name="msapplication-TileImage" content="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/favicons/ms-icon-144x144.png"/>
 		<meta name="msapplication-TileColor" content="#ffffff"/>
 		<meta name="theme-color" content="#ffffff"/>
-		<link rel="stylesheet" href="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/css/style.css" media="all"/>
-		<script src="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/scripts/modernizr-custom.js">// Modernizr</script>
+		<link rel="stylesheet" href="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/css/style.css" media="all"/>
+		<script src="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/scripts/modernizr-custom.js">// Modernizr</script>
 		<epc:phrase ref="uol-eprints-theme/head_imports"/>
 		<link rel="Top" href="{$config{frontpage}}"/>
 		<link rel="Search" href="{$config{http_cgiurl}}/search"/>
@@ -50,24 +50,24 @@
 				<epc:phrase ref="uol-eprints-theme/quicklinks"/>
 				<div id="masthead" class="masthead" role="banner">
 					<div class="site-logo">
-						<a href="https://www.leeds.ac.uk/" title="University of Leeds home page"><img class="js-png-svg" src="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/img/uol-logo.png" alt="University of Leeds logo"/></a>
+						<a href="https://www.leeds.ac.uk/" title="University of Leeds home page"><img class="js-png-svg" src="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/img/uol-logo.png" alt="University of Leeds logo"/></a>
 					</div>
 				</div>
 				<div id="sitesearch" class="site-search collapse">
 					<div class="wrapper-pd-xxs">
 						<form class="site-search-inner" autocomplete="off" action="{$config{rel_path}}/cgi/search/simple" role="search">
 							<label class="sr-only" for="searchInput">Search</label>
-							<input id="searchInput" class="site-search-input" type="search" name="q" placeholder="Search" autocomplete="off">
+							<input id="searchInput" class="site-search-input" type="search" name="q" placeholder="Search" autocomplete="off" />
 							<label class="sr-only" for="searchOption">Destination</label>
-							<select id="searchOption" class="site-search-select js-action-toggle" name="searchOption">
-								<option value="searchSite" selected data-action="{$config{rel_path}}/cgi/search/simple"><epc:phrase ref="archive_name"/></option>
+							<select id="searchOption" class="site-search-selecnano t js-action-toggle" name="searchOption">
+								<option value="searchSite" selected="selected" data-action="{$config{rel_path}}/cgi/search/simple"><epc:phrase ref="archive_name"/></option>
 								<option value="searchAll" data-action="http://www.leeds.ac.uk/site/scripts/search_results.php">All leeds.ac.uk sites</option>
 							</select>
 							<input type="hidden" name="_order" value="bytitle" />
 							<input type="hidden" name="basic_srchtype" value="ALL" />
 							<input type="hidden" name="_satisfyall" value="ALL" />
 							<input type="hidden" name="_default_action" value="search" />
-							<input class="site-search-submit btn btn-primary" type="submit" name="_action_search" value="Search">
+							<input class="site-search-submit btn btn-primary" type="submit" name="_action_search" value="Search" />
 						</form>
 						<a class="ep_advanced_search_link" href="{$config{rel_path}}/cgi/search/advanced">Advanced search</a>
 					</div>
@@ -147,7 +147,7 @@
 			
 		</div>
 
-		<script src="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/scripts/bundle.min.js">// Design System</script>
+		<script src="{$config{rel_path}}/assets/{phrase('LeedsTheme/assets_guid')/scripts/bundle.min.js">// Design System</script>
 
 	</body>
 </html>
