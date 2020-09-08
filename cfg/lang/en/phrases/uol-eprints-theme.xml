@@ -3,12 +3,12 @@
 <epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
 
     <!-- assets GUID -->
-    <epp:phrase id="LeedsTheme/assets_guid">2020-07-27-1317</epp:phrase>
-    <epp:phrase id="LeedsTheme/head_imports">
+    <epp:phrase id="uol-eprints-theme/assets_guid">2020-07-27-1317</epp:phrase>
+    <epp:phrase id="uol-eprints-theme/head_imports">
         <link rel="dns-prefetch" href="//use.typekit.net" />
         <link rel="stylesheet" id="typekit-css"  href="//use.typekit.net/vlw5ilb.css" media="all" />
     </epp:phrase>
-    <epp:phrase id="LeedsTheme/gtm">
+    <epp:phrase id="uol-eprints-theme/gtm">
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -21,7 +21,7 @@
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
     </epp:phrase>
-	<epp:phrase id="LeedsTheme/quicklinks">
+	<epp:phrase id="uol-eprints-theme/quicklinks">
 		<div class="quicklinks-outer">
 			<div class="masthead-links">
 				<button class="masthead-link masthead-link-quicklinks js-quicklinks-toggle" data-toggle="collapse" data-target="#quicklinks" aria-label="Open University quicklinks menu">University links</button>

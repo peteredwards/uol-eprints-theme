@@ -1,4 +1,4 @@
-$c->{theme} = "LeedsTheme";
+$c->{theme} = "uol-eprints-theme";
 
 # USER LOGIN (overwrites function in user_login.pl)
 # JLRS - 2012-09-06
