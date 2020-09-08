@@ -1,93 +1,153 @@
 <?xml version="1.0" standalone="no" ?>
 <!DOCTYPE html SYSTEM "entities.dtd" > 
 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epc="http://eprints.org/ep3/control">
-  <head>
-    <title><epc:pin ref="title" textonly="yes"/> - <epc:phrase ref="archive_name"/></title>
-	<epc:pin ref="login_status_header"/>
-	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
-    <link rel="icon" href="http://www.leeds.ac.uk/site/favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="http://www.leeds.ac.uk/site/favicon.ico" type="image/x-icon"/>
-    <link rel="Top" href="{$config{frontpage}}"/>
-    <link rel="Search" href="{$config{http_cgiurl}}/search"/>
-    <epc:pin ref="head"/>
-    <!--[if IE]>
-      <style type="text/css">body{font-size:75%}.clearfix,.content{zoom:1}</style>
-    <![endif]-->
-    <!--[if (gte IE 5.5)&(lt IE 9)]>
-      <style type="text/css">.content h1 a{zoom:1}</style>
-    <![endif]-->
-    <!--[if IE 6]>
-      <style type="text/css">body{background:none}.content-main h2{line-height:1.09em}.document .content-main h2{margin-top:0}.header h2{float: none}#logo{line-height:58px;z-index:10}.site-sidebar{height:780px;margin-bottom:18px;z-index:9;position:absolute;top:58px;right:9px;float:none;}.sidebars-site .nav-main{width:710px}.section-sidebar{width:130px;clear:both}.content-main{float:none}.header{float:left;overflow:auto;position:relative;width:100%}.content-info p{position:relative}.nav-main li{border:0}.nav-main li a{margin-left:-.1em;padding:0 0.5em 0.2em 0.5em}.nav-main li:first-child a{padding: 0 0.7em 0.2em 0.9em}</style>
-    <![endif]-->
-    <!--[if IE 7]>
-      <style type="text/css">.content-main h2{line-height:1.07em}.content-main li a:hover{text-decoration: underline}.header h2{float:none}.site-search input.searchsubmit{position:absolute;right:10px}#logo{z-index:10}.nav-main li{border:0}.nav-main li a{margin-left:-.1em;padding:0 0.5em 0.2em 0.5em}.nav-main li:first-child a{padding:0 0.7em 0.2em 0.9em}.nav-main li:last-of-type a{border:0}.breadcrumb li{float:left}</style>
-    <![endif]-->
-  </head>
-<body class="sidebars-site sidebar-corporate">
-	<epc:pin ref="pagetop"/>
-    <div class="header"> 
-        <a id="logo" href="http://www.leeds.ac.uk/" title="University of Leeds Homepage"><img src="{$config{rel_path}}/images/logo/logo_black.png" class="hidden" alt="University of Leeds" /></a>
-    </div>
-
-    <div class="content">
-
-        <h1><a href="{$config{frontpage}}" rel="home"><span><epc:phrase ref="archive_name"/></span></a></h1>
-      
-        <ul id="menu-top-tabs" class="nav-main">
-			<li><a href="{$config{frontpage}}">Home</a></li>
-			<li><a href="{$config{rel_path}}/view/">Browse</a></li>
-			<li><a href="{$config{perl_url}}/latest">Latest Additions</a></li>
-			<li><a href="{$config{rel_path}}/information.html">About</a></li>
-			<li><a href="{$config{rel_path}}/help/">Help</a></li>
-		</ul>
-
-        <div class="site-sidebar">
-            <div class="site-sidebar-content">
-            	<div class="site-search">
-            		<h4>Search site</h4>
-            		<form role="search" method="get" action="{$config{rel_path}}/cgi/search/simple">
-					    <input class="searchinput" type="text" name="q" placeholder="Search..." />
-					    <input value="go" type="submit" name="_action_search" class="searchsubmit" />
-						<input type="hidden" name="_order" value="bytitle" />
-						<input type="hidden" name="basic_srchtype" value="ALL" />
-						<input type="hidden" name="_satisfyall" value="ALL" />
-						<input type="hidden" name="_default_action" value="search" />
-					</form>
-					<br />
-					<a class="ep_advanced_search_link" href="{$config{rel_path}}/cgi/search/advanced">Advanced search</a>
+<html xmlns:epc="http://eprints.org/ep3/control">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title><epc:pin ref="title" textonly="yes"/> - <epc:phrase ref="archive_name"/></title>
+		<epc:pin ref="login_status_header"/>
+		<link rel="icon" sizes="192x192" type="image/png" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/android-icon-192x192.png"/>
+		<link rel="icon" sizes="144x144" type="image/png" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/android-icon-144x144.png"/>
+		<link rel="icon" sizes="96x96" type="image/png" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/android-icon-96x96.png"/>
+		<link rel="icon" sizes="72x72" type="image/png" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/android-icon-72x72.png"/>
+		<link rel="icon" sizes="48x48" type="image/png" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/android-icon-48x48.png"/>
+		<link rel="icon" sizes="36x36" type="image/png" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/android-icon-36x36.png"/>
+		<link rel="icon" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/favicon.ico"/>
+		<link rel="icon" sizes="16x16" type="image/png" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/favicon-16x16.png"/>
+		<link rel="icon" sizes="32x32" type="image/png" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/favicon-32x32.png"/>
+		<link rel="icon" sizes="96x96" type="image/png" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/favicon-96x96.png"/>
+		<link rel="apple-touch-icon" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/apple-icon-precomposed.png"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/apple-icon-180x180.png"/>
+		<link rel="apple-touch-icon" sizes="152x152" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/apple-icon-152x152.png"/>
+		<link rel="apple-touch-icon" sizes="144x144" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/apple-icon-144x144.png"/>
+		<link rel="apple-touch-icon" sizes="120x120" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/apple-icon-120x120.png"/>
+		<link rel="apple-touch-icon" sizes="114x114" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/apple-icon-114x114.png"/>
+		<link rel="apple-touch-icon" sizes="76x76" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/apple-icon-76x76.png"/>
+		<link rel="apple-touch-icon" sizes="72x72" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/apple-icon-72x72.png"/>
+		<link rel="apple-touch-icon" sizes="60x60" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/apple-icon-60x60.png"/>
+		<link rel="apple-touch-icon" sizes="57x57" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/apple-icon-57x57.png"/>
+		<link rel="manifest" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/manifest.json"/>
+		<link rel="icon" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/favicon.ico" type="image/x-icon"/>
+		<meta name="msapplication-TileImage" content="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/favicons/ms-icon-144x144.png"/>
+		<meta name="msapplication-TileColor" content="#ffffff"/>
+		<meta name="theme-color" content="#ffffff"/>
+		<link rel="stylesheet" href="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/css/style.css" media="all"/>
+		<script src="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/scripts/modernizr-custom.js">// Modernizr</script>
+		<epc:phrase ref="LeedsTheme/head_imports"/>
+		<link rel="Top" href="{$config{frontpage}}"/>
+		<link rel="Search" href="{$config{http_cgiurl}}/search"/>
+		<epc:pin ref="head"/>
+	</head>
+	<body>
+		<epc:pin ref="pagetop"/>
+		<epc:phrase ref="LeedsTheme/gtm"/>
+		<div id="site-container" class="site-container-md">
+			<header>
+				<div role="navigation" aria-label="Skip to main content"><a id="skip-main" href="#main" role="button">Skip to main content</a></div>
+				<epc:phrase ref="LeedsTheme/quicklinks"/>
+				<div id="masthead" class="masthead" role="banner">
+					<div class="site-logo">
+						<a href="https://www.leeds.ac.uk/" title="University of Leeds home page"><img class="js-png-svg" src="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/img/uol-logo.png" alt="University of Leeds logo"></a>
+					</div>
 				</div>
-				<div class="right-menu">
-					<span class="ep_search_feed"><a href="{$config{rel_cgipath}}/latest_tool?output=Atom"><img alt="[feed]" src="{$config{rel_path}}/style/images/feed-icon-14x14.png" border="0" /></a> <a href="{$config{rel_cgipath}}/latest_tool?output=Atom">Atom</a></span>
-					<span class="ep_search_feed"><a href="{$config{rel_cgipath}}/latest_tool?output=RSS2"><img alt="[feed]" src="{$config{rel_path}}/style/images/feed-icon-14x14.png" border="0" /></a> <a href="{$config{rel_cgipath}}/latest_tool?output=RSS2">RSS</a></span>
+				<div id="sitesearch" class="site-search collapse">
+					<div class="wrapper-pd-xxs">
+						<form class="site-search-inner" autocomplete="off" action="{$config{rel_path}}/cgi/search/simple" role="search">
+							<label class="sr-only" for="searchInput">Search</label>
+							<input id="searchInput" class="site-search-input" type="search" name="q" placeholder="Search" autocomplete="off">
+							<label class="sr-only" for="searchOption">Destination</label>
+							<select id="searchOption" class="site-search-select js-action-toggle" name="searchOption">
+								<option value="searchSite" selected data-action="{$config{rel_path}}/cgi/search/simple"><epc:phrase ref="archive_name"/></option>
+								<option value="searchAll" data-action="http://www.leeds.ac.uk/site/scripts/search_results.php">All leeds.ac.uk sites</option>
+							</select>
+							<input type="hidden" name="_order" value="bytitle" />
+							<input type="hidden" name="basic_srchtype" value="ALL" />
+							<input type="hidden" name="_satisfyall" value="ALL" />
+							<input type="hidden" name="_default_action" value="search" />
+							<input class="site-search-submit btn btn-primary" type="submit" name="_action_search" value="Search">
+						</form>
+						<a class="ep_advanced_search_link" href="{$config{rel_path}}/cgi/search/advanced">Advanced search</a>
+					</div>
 				</div>
-				<div class="right-menu">
-					<epc:pin ref="login_status"/>
-				</div>
-            </div>
-        </div>
-        
-        <div class="content-main">        
-        	<h2 class="ed_page_title"><epc:pin ref="title" /></h2>
 
-			<div class="ed_page_content">
-				<epc:pin ref="page"/>
+				<div class="site-search-toggle-container">
+					<div class="site-search-toggle">
+						<button class="icon-font sm-toggle-search btn-icon js-site-search-toggle" data-toggle="collapse" data-target="#sitesearch" aria-label="Open site search">
+							<span class="site-search-btn" aria-hidden="true"></span>
+							<span class="icon-font-text">Search</span>
+						</button>
+					</div>
+				</div>
+				<div class="local-header">
+					<div class="wrapper-pd-xs">
+						<div class="local-header-inner">
+							<div class="local-header-title" role="navigation" aria-label="Home page link">
+								<a href="{$config{frontpage}}"><epc:phrase ref="archive_name"/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav id="ds-nav-priority" class="ds-nav ds-nav-priority">
+					<div class="navicon">
+						<button class="btn-icon" data-state="body-state" data-class="state-navicon-active">Menu</button>
+					</div>
+					<div class="wrapper-relative">
+						<div class="ds-nav-header">
+							<button class="btn-icon" data-state="body-state" data-class="state-navicon-active">Close</button>
+						</div>
+						<div class="ds-nav-inner">
+							<ul class="ds-nav-list ds-nav-list-primary">
+								<li><a href="{$config{frontpage}}">Home</a></li>
+								<li><a href="{$config{rel_path}}/view/">Browse</a></li>
+								<li><a href="{$config{perl_url}}/latest">Latest Additions</a></li>
+								<li><a href="{$config{rel_path}}/information.html">About</a></li>
+								<li><a href="{$config{rel_path}}/help/">Help</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<div class="column-container column-container-fw">
+				<aside class="column-container-secondary">
+					<button class="sidebar-button js-sidebar-trigger">In this section: </button>
+					<div class="sidebar-container sidebar-container-fw">
+						<h4 class="sidebar-heading heading-related">In this section</h4>
+						<epc:pin ref="login_status"/>
+					</div>
+				</aside>
+				<main id="main">
+					<header class="page-heading">
+						<h1 class="page-heading__title"><epc:pin ref="title" /></h1>
+					</header>
+					<div class="cms">
+						<epc:pin ref="page"/>
+					</div>
+				</main>
 			</div>
-			<div class="clearer"> </div>
-        </div><!-- #.content-main -->
 
-    </div><!-- #.content -->
+			<footer class="site-footer">
+				<div class="site-footer-lower">
+					<h2 class="hide-accessible">Site information</h2>
+					<div class="wrapper-pd">
+						<ul class="nav">
+							<li>&copy; 2020 University of Leeds, Leeds, LS2 9JT</li>
+							<li><a href="http://www.leeds.ac.uk/info/5000/about/238/terms_and_conditions">Terms and conditions</a></li>
+							<li><a href="{$config{rel_path}}/policies.html">Repository Policies</a></li>
+							<li><a href="{$config{rel_path}}/privacy.html">Privacy and Cookies</a></li>
+							<li><a href="{$config{rel_path}}/accessibility.html">Accessibility</a></li>
+							<li><a href="https://www.leeds.ac.uk/foi">Freedom of Information</a></li>
+							<li><a href="{$config{rel_path}}/contact.html">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+			
+		</div>
 
-    <div class="content-info">
-		<ul id="menu-footer-links" class="nav">
-			<li><a href="{$config{rel_path}}/accessibility.html">Accessibility</a></li>
-			<li><a href="{$config{rel_path}}/policies.html">Repository Policies</a></li>
-			<li><a href="{$config{rel_path}}/privacy.html">Privacy</a></li>
-			<li><a href="http://www.leeds.ac.uk/freedom-of-information">Freedom of Information</a></li>
-			<li><a href="{$config{rel_path}}/contact.html">Contact Us</a></li>
-		</ul>
-        <p><epc:phrase ref="archive_name"/> is powered by <a href="http://eprints.org">EPrints</a><br />&#169; Copyright Leeds 2013</p>
-    </div>
+		<script src="{$config{rel_path}}{phrase{LeedsTheme/assets_guid}}/assets/scripts/bundle.min.js">// Design System</script>
 
-</body>
+	</body>
 </html>

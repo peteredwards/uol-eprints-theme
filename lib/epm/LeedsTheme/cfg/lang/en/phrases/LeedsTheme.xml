@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE phrases SYSTEM "entities.dtd">
+<epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
+
+    <!-- assets GUID -->
+    <epp:phrase id="LeedsTheme/assets_guid">2020-07-27-1317</epp:phrase>
+    <epp:phrase id="LeedsTheme/head_imports">
+        <link rel="dns-prefetch" href="//use.typekit.net" />
+        <link rel="stylesheet" id="typekit-css"  href="//use.typekit.net/vlw5ilb.css" media="all" />
+    </epp:phrase>
+    <epp:phrase id="LeedsTheme/gtm">
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WJPZM2T');</script>
+		<!-- End Google Tag Manager -->
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJPZM2T"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+    </epp:phrase>
+	<epp:phrase id="LeedsTheme/quicklinks">
+		<div class="quicklinks-outer">
+			<div class="masthead-links">
+				<button class="masthead-link masthead-link-quicklinks js-quicklinks-toggle" data-toggle="collapse" data-target="#quicklinks" aria-label="Open University quicklinks menu">University links</button>
+			</div>
+			<nav id="quicklinks" class="quicklinks collapse">
+				<h2 class="hide-accessible">University links</h2>
+				<div class="wrapper-relative">
+					<div class="quicklinks-inner">
+						<div class="ds-row">
+							<div class="col-sm-6 col-md-3">
+								<div class="nav-list-group">
+									<h3 class="nav-list-group__title">For staff</h3>
+									<ul class="nav-list-group__list">
+										<li class="nav-list-group__item"><a href="https://www.leeds.ac.uk/forstaff/" class="nav-list-group__link">For Staff</a></li>
+										<li class="nav-list-group__item"><a href="https://www.leeds.ac.uk/forstaff/homepage/375/services" class="nav-list-group__link">Services A-Z</a></li>
+										<li class="nav-list-group__item"><a href="https://ses.leeds.ac.uk/" class="nav-list-group__link">Student Education Service</a></li>
+									</ul>
+									<h3 class="nav-list-group__title">For students</h3>
+									<ul class="nav-list-group__list">
+										<li class="nav-list-group__item"><a href="https://students.leeds.ac.uk/" class="nav-list-group__link">For Students</a></li>
+										<li class="nav-list-group__item"><a href="https://minerva.leeds.ac.uk/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_206_1" class="nav-list-group__link">Portal</a></li>
+										<li class="nav-list-group__item"><a href="https://it.leeds.ac.uk/mobileapps" class="nav-list-group__link">Mobile app</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="nav-list-group">
+									<h3 class="nav-list-group__title">Faculties</h3>
+									<ul class="nav-list-group__list">
+										<li class="nav-list-group__item"><a href="https://ahc.leeds.ac.uk/" class="nav-list-group__link">Faculty of Arts, Humanities and Cultures</a></li>
+										<li class="nav-list-group__item"><a href="https://biologicalsciences.leeds.ac.uk/" class="nav-list-group__link">Faculty of Biological Sciences</a></li>
+										<li class="nav-list-group__item"><a href="https://business.leeds.ac.uk/" class="nav-list-group__link">Faculty of Business</a></li>
+										<li class="nav-list-group__item"><a href="https://eps.leeds.ac.uk/" class="nav-list-group__link">Faculty of Engineering and Physical Sciences</a></li>
+										<li class="nav-list-group__item"><a href="https://environment.leeds.ac.uk/" class="nav-list-group__link">Faculty of Environment</a></li>
+										<li class="nav-list-group__item"><a href="https://medicinehealth.leeds.ac.uk/" class="nav-list-group__link">Faculty of Medicine and Health</a></li>
+										<li class="nav-list-group__item"><a href="https://essl.leeds.ac.uk/" class="nav-list-group__link">Faculty of Social Sciences</a></li>
+										<li class="nav-list-group__item"><a href="https://www.llc.leeds.ac.uk/" class="nav-list-group__link">Lifelong Learning Centre</a></li>
+										<li class="nav-list-group__item"><a href="https://www.leeds.ac.uk/info/130567/language_centre" class="nav-list-group__link">Language Centre</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="nav-list-group">
+									<h3 class="nav-list-group__title">Other</h3>
+									<ul class="nav-list-group__list">
+										<li class="nav-list-group__item"><a href="https://www.leeds.ac.uk/staffaz" class="nav-list-group__link">Staff A-Z</a></li>
+										<li class="nav-list-group__item"><a href="https://www.leeds.ac.uk/campusmap" class="nav-list-group__link">Campus map</a></li>
+										<li class="nav-list-group__item"><a href="https://www.leeds.ac.uk/jobs" class="nav-list-group__link">Jobs</a></li>
+										<li class="nav-list-group__item"><a href="https://alumni.leeds.ac.uk/" class="nav-list-group__link">Alumni</a></li>
+										<li class="nav-list-group__item"><a href="https://www.leeds.ac.uk/contact" class="nav-list-group__link">Contacts</a></li>
+										<li class="nav-list-group__item"><a href="https://library.leeds.ac.uk/" class="nav-list-group__link">Library</a></li>
+										<li class="nav-list-group__item"><a href="https://it.leeds.ac.uk/" class="nav-list-group__link">IT</a></li>
+										<li class="nav-list-group__item"><a href="https://video.leeds.ac.uk/" class="nav-list-group__link">VideoLeeds</a></li>
+										<li class="nav-list-group__item"><a href="https://www.luu.org.uk/" class="nav-list-group__link">Leeds University Union</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="nav-list-group">
+									<h3 class="nav-list-group__title">Follow us</h3>
+									<ul class="nav-list-group__list">
+										<li class="nav-list-group__item"><a href="https://www.facebook.com/universityofleeds" class="nav-list-group__link">Facebook</a></li>
+										<li class="nav-list-group__item"><a href="https://www.twitter.com/universityleeds" class="nav-list-group__link">Twitter</a></li>
+										<li class="nav-list-group__item"><a href="https://www.youtube.com/universityofleeds" class="nav-list-group__link">YouTube</a></li>
+										<li class="nav-list-group__item"><a href="https://www.linkedin.com/edu/university-of-leeds-12706" class="nav-list-group__link">LinkedIn</a></li>
+										<li class="nav-list-group__item"><a href="https://instagram.com/universityofleeds/" class="nav-list-group__link">Instagram</a></li>
+										<li class="nav-list-group__item"><a href="https://medium.com/university-of-leeds" class="nav-list-group__link">Medium</a></li>
+										<li class="nav-list-group__item"><a href="https://www.weibo.com/leedsuniversityuk" class="nav-list-group__link">Weibo</a></li>
+										<li class="nav-list-group__item"><a href="https://theconversation.com/institutions/university-of-leeds-1122" class="nav-list-group__link">The Conversation</a></li>
+										<li class="nav-list-group__item"><a href="https://www.leeds.ac.uk/rss/news" class="nav-list-group__link">RSS news feed</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="quicklinks-close">
+								<button class="icon-font btn-icon js-quicklinks-close" data-toggle="collapse" data-target="#quicklinks">
+									<span class="ds-icon-close" aria-hidden="true"></span>
+									<span class="icon-font-text">Close quicklinks</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</epp:phrase>
+
+</epp:phrases>
