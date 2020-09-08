@@ -50,7 +50,7 @@
 				<epc:phrase ref="uol-eprints-theme/quicklinks"/>
 				<div id="masthead" class="masthead" role="banner">
 					<div class="site-logo">
-						<a href="https://www.leeds.ac.uk/" title="University of Leeds home page"><img class="js-png-svg" src="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/img/uol-logo.png" alt="University of Leeds logo"></a>
+						<a href="https://www.leeds.ac.uk/" title="University of Leeds home page"><img class="js-png-svg" src="{$config{rel_path}}{phrase('uol-eprints-theme/assets_guid')}/assets/img/uol-logo.png" alt="University of Leeds logo"/></a>
 					</div>
 				</div>
 				<div id="sitesearch" class="site-search collapse">
