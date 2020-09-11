@@ -41,17 +41,9 @@ select, input.ep_form_text, textarea {
 
 /* form fields */
 
-.ep_form_field_help {
-        font-size: small ;
-}
-
 .ep_form_field_name {
         padding-top: 1em;
 	font-weight: bold;
-}
-
-.ep_form_field_input {
-        padding-bottom: 3pt;
 }
 
 /* input fields grid */
@@ -60,7 +52,6 @@ select, input.ep_form_text, textarea {
 .ep_form_input_grid > th {
 	vertical-align: middle;
 	text-align: center;
-	font-size: 80%;
 }
 .ep_form_input_grid td {
 	vertical-align: middle;

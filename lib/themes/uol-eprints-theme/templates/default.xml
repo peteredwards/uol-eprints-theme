@@ -112,11 +112,13 @@
 			</header>
 			<div class="column-container column-container-fw">
 				<main id="main">
-					<header class="page-heading">
-						<h1 class="page-heading__title"><epc:pin ref="title" /></h1>
-					</header>
-					<div class="cms">
-						<epc:pin ref="page"/>
+					<div class="wrapper-md wrapper-pd-md">
+						<header class="page-heading">
+							<h1 class="page-heading__title"><epc:pin ref="title" /></h1>
+						</header>
+						<div class="cms">
+							<epc:pin ref="page"/>
+						</div>
 					</div>
 				</main>
 			</div>

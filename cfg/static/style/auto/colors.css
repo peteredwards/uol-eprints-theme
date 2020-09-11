@@ -40,16 +40,6 @@
 .ep_tm_searchbarbox {
 	border-color: #606060;
 }
-.ep_tm_key_tools li {
-	border-left: 1px solid #e8e8e8;
-	border-right: 1px solid #606060;
-}
-.ep_tm_key_tools li:first-child {
-	border-left: none;
-}
-.ep_tm_key_tools li:last-child {
-	border-right: none;
-}
 
 /* form.css */
 

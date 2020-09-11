@@ -1,18 +1,3 @@
-body {
-	margin: 0;
-	font-family: Sans-serif;
-	font-size: 80%;
-}
-
-/* left-align if we're in a div (e.g. ep_block) that centres */
-ul {
-	text-align: left;
-}
-
-img {
-        border:0;
-}
-
 .ep_no_js { 
 	display: none; 
 }
@@ -27,35 +12,6 @@ img {
 
 .ep_hide { 
 	display: none; 
-}
-
-h1, h2 {
-	font-weight: bold;
-}
-h1 {
-	margin: 0px;
-	margin-top: 10px;
-	font-size: 130%;
-	text-align: center;
-}
-h2 {
-	font-size: 110%;
-}
-h3 {
-	font-size: 120%;
-}
-h4 {
-	font-size: 100%;
-}
-
-hr {
-	border: 0px;
-	color: #ccc;
-	background-color: #ccc;
-	height: 2px;
-}
-
-.ep_required {
 }
 
 .ep_toggle a, a.ep_toggle {
@@ -80,8 +36,6 @@ th.ep_title_row {
 	border-left: none;
 	border-right: none;
 	padding: 0.1em 0.5em 0.1em 0.5em;
-	font-size: 100%;
-	height: 2em;
 	font-weight: normal;
 }
 

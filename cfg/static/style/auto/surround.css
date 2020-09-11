@@ -17,7 +17,6 @@
 }
 .ep_sr_component .ep_sr_title {
 	font-weight: bold;
-	font-size: 115%;
 	color: #444;
 }
 .ep_sr_component .ep_sr_content {
@@ -30,7 +29,6 @@
 .ep_sr_collapse_bar {
 	padding: 2px 6px 2px 6px; 
 	font-weight: bold;
-	font-size: 115%;
 }
 .ep_sr_collapse_bar a {
 	text-decoration: none;

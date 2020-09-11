@@ -4,7 +4,6 @@ div#progress {
 }
 
 .progressmeter {
-    font-size: 10pt;
     text-align: center;
 }
 
@@ -48,7 +47,6 @@ div#progress {
     z-index: 1000;
     line-height: 20px;
     text-align: center;
-    font-size: 18px;
     font-weight: bold;
 }
 
