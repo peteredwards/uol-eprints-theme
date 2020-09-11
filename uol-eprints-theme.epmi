@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<epm xmlns='http://eprints.org/ep2/data/2.0' id='https://universityofleeds.visualstudio.com/EPrints/_git/uol-eprints-theme'>
+<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://theme.timescapes.test/id/epm/uol-eprints-theme'>
   <epmid>uol-eprints-theme</epmid>
   <documents>
     <document>
@@ -49,9 +49,247 @@
         <file>
           <filename>epm/uol-eprints-theme/cfg/lang/en/phrases/uol-eprints-theme.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>048a9db399fa499183f36a9092c76e77</hash>
+          <hash>9bf1693cb8e5287529ade63f5b2d606e</hash>
           <hash_type>MD5</hash_type>
-          <filesize>7981</filesize>
+          <filesize>8045</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/items.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>8ae89b7a5dd6935f6692ccf48a1fb4de</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>463</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/multi.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>05bf9027cd4e25c9bf46e6bedecd41e5</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>843</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/print.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>637dc3ba7f7cd85b35a27cd88d51e8cf</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>51</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/template.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>2069121c7027b9d312e7b8ebaaf363d6</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>2747</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/form.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>fe1fe4026715ad4e612176cd1857e752</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1181</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/general.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>2b313c4e102c6d6e50bc421e62cf1453</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1909</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/subjectinput.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>8960454eca0a30cf4dfaf59284bfb24e</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1836</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/columns.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>7ce2bc2afe953b16468399ef7de7d712</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>781</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/box.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>54ff81204521ddc18ee6ffe0df30abb5</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>325</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/summary.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>a8b8a3adeb6eb816b3d9b09f80f99403</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>819</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/fields.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>c0f755f6f9260dd054fa0d84c22703dd</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>158</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/lightbox.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>890b0909a7fa59a6e94240f5c9f4246d</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1943</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/icontable.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>042b1cd720365d731ea9bb099d5109d4</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>220</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/preview.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>95048583df09f12c67a7a779c1993ebd</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>323</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/tabs.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>e26c87b884833fc6f8583dd540a0c975</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>952</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/mail.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>48e99719a77b5de3e4bd7bf59e0df25b</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>292</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/upload.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>77e194ac5c5795815e9eecea36d4d094</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1694</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/blister.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>8558417f3c99edbea5ff5eb376fc1c88</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>487</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/latest.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>2868b7addc3ebdddbdbb0bd1947c62ce</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>173</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/datepicker.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>fbe77eafde16a479731a68294f83513f</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>539</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/progress.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>5e86de94fcc6637e21a6493bc3a03a2f</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>873</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/drop.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>7dc023c44aa05ad938d70507d8283b98</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>828</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/actions.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>37118632ed7a3cb91291856ab1fd7f28</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>684</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/nojs.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>286fc1f0d3bc868fb54b31e3682bc0af</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>322</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/citations.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>060a3ff7636d5bedf96aac74b010af5c</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>98</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/search.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>cd9d79d085f531129a3fa2f105f2aa99</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1534</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/colors.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>c06a9a5d5adb1384876d0635c0b0f2b7</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>4595</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/toolbox.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>2a837f9e1d88de6da25f45bb89e4e6e1</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>229</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/savedsearches.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>cdf54a4985bdf90ca9b5c9897b29b7ee</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>184</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/messages.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>7d720494ef8ad9b7d56051867fbdf39b</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>394</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/fileselector.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>88c70487909e8aaba8f9f286871165d4</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1028</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/admin_phrases.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>204102ae56cc3743b815db36ffa30950</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>938</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/surround.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>67b54a0863e441f906ebcd71a8052ec1</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1498</filesize>
+        </file>
+        <file>
+          <filename>epm/uol-eprints-theme/cfg/static/style/auto/view.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>2d3c3a839e4b15f600b0ab6b2fc17539</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>737</filesize>
         </file>
         <file>
           <filename>epm/uol-eprints-theme/cfg/cfg.d/z_uol-eprints-theme.pl</filename>
@@ -385,9 +623,9 @@
         <file>
           <filename>themes/uol-eprints-theme/templates/default.xml</filename>
           <mime_type>application/x-symlink</mime_type>
-          <hash>48eb118a7f43a66b9993e7a741b21bfe</hash>
+          <hash>17f51ed2cde98d30ae20d6a440a072c2</hash>
           <hash_type>MD5</hash_type>
-          <filesize>9829</filesize>
+          <filesize>10544</filesize>
         </file>
         <file>
           <filename>static/images/epm/uol-eprints-theme.png</filename>
@@ -427,10 +665,10 @@
       <id>p.l.edwards@leeds.ac.uk</id>
     </item>
   </creators>
-  <datestamp>2020-09-08 20:04:37</datestamp>
+  <datestamp>2020-09-11 13:00:02</datestamp>
   <title>University of Leeds EPrints Theme</title>
-  <description>Theme to apply University of Leeds branding to an EPrints repository</description>
-  <requirements>Nothing Special</requirements>
-  <home_page>https://universityofleeds.visualstudio.com/EPrints/_git/uol-eprints-theme</home_page>
+  <description>Theme for EPrints base don the University of Leeds Design System - https://designsystem.leeds.ac.uk.</description>
+  <requirements></requirements>
+  <home_page>https://universityofleeds.visualstudio.com/EPrints</home_page>
   <icon>images/epm/uol-eprints-theme.png</icon>
 </epm>
