@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no" ?>
 <!DOCTYPE html SYSTEM "entities.dtd" > 
 
-<html xmlns:epc="http://eprints.org/ep3/control">
+<html xmlns:epc="http://eprints.org/ep3/control" lang="{phrase('uol-eprints-theme/lang_attr')}">
 	<head>
 		<meta charset="UTF-8"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
@@ -111,13 +111,6 @@
 				</nav>
 			</header>
 			<div class="column-container column-container-fw">
-				<aside class="column-container-secondary">
-					<button class="sidebar-button js-sidebar-trigger">In this section: </button>
-					<div class="sidebar-container sidebar-container-fw">
-						<h4 class="sidebar-heading heading-related">In this section</h4>
-						<epc:pin ref="login_status"/>
-					</div>
-				</aside>
 				<main id="main">
 					<header class="page-heading">
 						<h1 class="page-heading__title"><epc:pin ref="title" /></h1>
@@ -128,6 +121,38 @@
 				</main>
 			</div>
 
+			<div class="site-footer-middle p-t-md p-b-md">
+				<div class="wrapper-pd">
+					<nav>
+						<h2 class="hide-accessible">Footer navigation</h2>
+						<div class="ds-row">
+							<div class="col-sm-6 col-md-3">
+								<div class="nav-list-group">
+									<h3 class="nav-list-group__title">Repository Tools</h3>
+									<epc:pin ref="login_status"/>
+								</div>
+
+								<div class="nav-list-group">
+									<h3 class="nav-list-group__title">Other Shit</h3>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="nav-list-group">
+									<h3 class="nav-list-group__title">More Bollocks</h3>
+								</div>
+								<div class="nav-list-group">
+									<h3 class="nav-list-group__title">Waste of Space</h3>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="nav-list-group">
+									<h3 class="nav-list-group__title">AAAARRGGH!</h3>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
 			<footer class="site-footer">
 				<div class="site-footer-lower">
 					<h2 class="hide-accessible">Site information</h2>

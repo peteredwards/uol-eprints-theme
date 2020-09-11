@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE phrases SYSTEM "entities.dtd">
 <epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
-
+    <epp:phrase id="uol-eprints-theme/lang_attr">en</epp:phrase>
     <!-- assets GUID -->
     <epp:phrase id="uol-eprints-theme/assets_guid">2020-07-27-1317</epp:phrase>
     <epp:phrase id="uol-eprints-theme/head_imports">
